@@ -70,14 +70,15 @@ export function LLMScreen({ onBack }: LLMScreenProps) {
   const handleSend = () => {
     if (!text.trim()) return
 
+
     const userMessage: Message = {
-      id: crypto.randomUUID(),
+      id: `user-${Date.now()}-${Math.random().toString(36).slice(2, 9)}`,
       role: "user",
       content: text.trim(),
     }
 
     const assistantMessage: Message = {
-      id: crypto.randomUUID(),
+      id: `assistant-${Date.now()}-${Math.random().toString(36).slice(2, 9)}`,
       role: "assistant",
       content: text.trim(),
     }
