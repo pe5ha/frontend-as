@@ -9,7 +9,7 @@ const _geistMono = Geist_Mono({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Ascension System',
-  description: 'Интерфейс для работы с LLM',
+  description: 'Продуктивная работа с LLM',
 }
 
 export default function RootLayout({
